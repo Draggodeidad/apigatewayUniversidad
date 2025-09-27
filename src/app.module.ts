@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { HealthModule } from './monitoring/health/health.module';
 import { AuthModule } from './auth/auth.module';
 import { GatewayModule } from './gateway/gateway.module';
+import { TramitesModule } from './tramites/tramites.module';
 import { AuthGuard } from './auth/auth.guard';
 import { appConfig, servicesConfig } from './config';
 
@@ -19,6 +20,7 @@ import { appConfig, servicesConfig } from './config';
     HealthModule,
     AuthModule,
     GatewayModule,
+    TramitesModule,
   ],
   controllers: [AppController],
   providers: [

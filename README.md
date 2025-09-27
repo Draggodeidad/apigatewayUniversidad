@@ -35,6 +35,10 @@ API_PREFIX=api/v1
 AUTH_SERVICE_URL=http://localhost:3000/graphql
 AUTH_SERVICE_TIMEOUT=5000
 
+# Configuración del microservicio de trámites
+TRAMITES_SERVICE_URL=http://localhost:3050
+TRAMITES_SERVICE_TIMEOUT=5000
+
 # Configuración de Supabase (para validación JWT)
 SUPABASE_URL=https://sirtkdkbqsklncyoallp.supabase.co
 SUPABASE_JWKS_URL=https://sirtkdkbqsklncyoallp.supabase.co/auth/v1/.well-known/jwks.json
@@ -72,6 +76,9 @@ La documentación de Swagger incluye:
 - `POST /api/v1/auth/login` - Login básico
 - `POST /api/v1/auth/login-complete` - Login completo con refresh token
 - `POST /api/v1/auth/refresh` - Renovar token
+- `GET /api/v1/tramites` - Obtener todos los trámites
+- `GET /api/v1/tramites/grouped` - Obtener trámites agrupados por categoría
+- `GET /api/v1/tramites/health` - Health check del microservicio de trámites
 
 #### Protegidos (requieren Bearer token):
 
