@@ -1,3 +1,2 @@
-// GraphQL resolvers will be implemented here
-export {};
-
+export * from './auth.resolver';
+export * from './user.resolver';

@@ -1,3 +1,1 @@
-// Common decorators will be implemented here
-export {};
-
+export * from './auth.decorators';
